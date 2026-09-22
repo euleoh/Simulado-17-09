@@ -31,11 +31,11 @@ class ProdutoEdit extends Component
         $produto = Produto::find($this->produto_id);
         
 
-        $this->nome = $this->nome;
-        $this->valor = $this->valor;
-        $this->qtd_estoque = $this->qtd_estoque;
-        $this->qtd_minima = $this->qtd_minima;
-        $this->observacoes = $this->observacoes;
+        $produto->nome = $this->nome;
+        $produto->valor = $this->valor;
+        $produto->qtd_estoque = $this->qtd_estoque;
+        $produto->qtd_minima = $this->qtd_minima;
+        $produto->observacoes = $this->observacoes;
 
         $produto->save();
         

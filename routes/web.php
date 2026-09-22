@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Auth\Auth\Login;
+use App\Livewire\Dashboard\Dashboard;
 use App\Livewire\Movimetacao\MovimentacaoCreate;
 use App\Livewire\Movimetacao\MovimentacaoIndex;
 use App\Livewire\Produto\ProdutoCreate;
@@ -20,3 +21,5 @@ Route::get('movimentacao/create', MovimentacaoCreate::class)->name('movimentacao
 Route::get('movimentacao/index', MovimentacaoIndex::class)->name('movimentacao.index');
 
 Route::get('login', Login::class)->name('login');
+
+Route::get('/dashboard', Dashboard::class)->name('dashboard');

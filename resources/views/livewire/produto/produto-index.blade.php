@@ -1,4 +1,10 @@
 <div class="mt-5">
+     <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Gestão de Produtos</h2>
+            <div class="d-flex gap-2">
+                <a class="btn btn-secondary mt-4" href="{{ route('produto.create') }}"> Cadastrar Produtos </a>
+            </div>
+        </div>
         @if(session()->has('error '))
         <div class="alert alert-danger">
             {{session('error')}}
